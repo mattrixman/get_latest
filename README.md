@@ -1,5 +1,4 @@
 # Super Awesome Nightly Test Runs 
-## Coding Challenge
 
 ## Description
 
