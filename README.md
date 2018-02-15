@@ -1,16 +1,44 @@
-# Nightly Runs Coding Challenge
+# Super Awesome Nightly Test Runs 
+## Coding Challenge
 
-Imagine that you have already written a super awesome test suite for Clover's next amazing product: *web-react.  Then you wrote a script that runs your tests and reports their results.  Your script is called `super_awesome_tests.sh`
+## Description
+
+Imagine that you have already written a super awesome test suite for a component that Clover needs to be reliable: *web-react*.  Then you wrote a script that runs your tests and reports their results.  Your script is called `super_awesome_tests.sh`
 Right now, when you run the script it will say something like:
 
     [<timestamp>] Super Awesome Tests not run.  Software not installed.
 
-But if web-react is installed and running it will say something like:
+But if web-react is installed it will say something like:
 
-    [<timestamp>] Super Awesome Tests run against version: <version> .
+    [<timestamp>] Super Awesome Tests run against version: <version> 
 
-Your goal is to make sure your tests run against the *latest version* every night at midnight.  Your co-worker Eric has provided a script that installs web-react. He says: 
+Your goal is to configure this machine so your tests run against the *latest version* every night at midnight.  After a week, the output of `./view_nightly_test_runs.sh` should resemble this:
 
- > I put the script in /usr/local/bin, it is called install_web-react.  If you call it each night with the version you want to install, it should handle everything so that all you need to do then is run your tests.
+    [2018-02-17] Super Awesome Tests run against version: facd0bc
+    [2018-02-18] Super Awesome Tests run against version: f3668b9
+    [2018-02-19] Super Awesome Tests run against version: e8d1a8e
+    [2018-02-20] Super Awesome Tests run against version: e8d1a8e
+    [2018-02-21] Super Awesome Tests run against version: d122764
+    [2018-02-22] Super Awesome Tests run against version: d122764
+    [2018-02-23] Super Awesome Tests run against version: d122764
 
+Your co-worker Eric has provided a script that installs web-react. He says: 
+
+> I put the script in /usr/local/bin.  If you call it each night with the version you want, install_web-react should handle all of the set-up so that all you need to do then is run your tests.
+
+## Guidelines
+
+ - Feel free to use a browser to search for help--this is not a test of what you can remember, it is a test of what you can do
+
+ - Feel free to use whatever technologies you are comfortable with
+
+ - If you feel like you are stuck, it is OK to ask questions
+
+ - *web-react* was chosen only because it is small and therefore quick to download, the actual contents of the package are not relevant to this excercie.
+
+ - No clues, and no curve-balls were placed on your filesystem outside of this repo (except by `challenge_setup.sh` which has nothing to hide).
+
+ - `super_awesome_tests.sh` was only provided to give you a way to "run your tests".  It should not be necessary to modify it.
+
+ - `view_nightly_test_runs.sh` was only provided to to give you an idea of how your solution will be evaluated for correctness.  It should not be necessary to modify it.
 
