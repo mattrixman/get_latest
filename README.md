@@ -1,6 +1,6 @@
 # Super Awesome Nightly Test Runs 
 
-## Description
+## Scenario
 
 Imagine that you have already written a super awesome test suite for a component that Clover needs to be reliable: *web-react*.  Then you wrote a script that runs your tests and reports their results.  Your script is called `super_awesome_tests.sh`
 Right now, when you run the script it will say something like:
@@ -11,6 +11,12 @@ But if web-react is installed it will say something like:
 
     [<timestamp>] Super Awesome Tests run against version: <version> 
 
+Your co-worker Eric has provided a script that installs web-react. He says: 
+
+> I put the script in /usr/local/bin.  If you call it each night with the version you want, install_web-react should handle all of the set-up so that all you need to do then is run your tests.
+
+## Goal
+
 Your goal is to configure this machine so your tests run against the *latest version* every night at midnight.  After a week, the output of `./view_nightly_test_runs.sh` should resemble this:
 
     [2018-02-17] Super Awesome Tests run against version: facd0bc
@@ -20,10 +26,6 @@ Your goal is to configure this machine so your tests run against the *latest ver
     [2018-02-21] Super Awesome Tests run against version: d122764
     [2018-02-22] Super Awesome Tests run against version: d122764
     [2018-02-23] Super Awesome Tests run against version: d122764
-
-Your co-worker Eric has provided a script that installs web-react. He says: 
-
-> I put the script in /usr/local/bin.  If you call it each night with the version you want, install_web-react should handle all of the set-up so that all you need to do then is run your tests.
 
 ## Guidelines
 
