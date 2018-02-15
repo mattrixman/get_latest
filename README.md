@@ -2,7 +2,7 @@
 
 ## Scenario
 
-Imagine that you have already written a super awesome test suite for a component that Clover needs to be reliable: *web-react*.  Then you wrote a script that runs your tests and reports their results.  Your script is called `super_awesome_tests.sh`
+You have already written a super awesome test suite for a component that Clover needs to be reliable: *web-react*.  You also have a script that runs your tests and reports their results.  Your script is called `super_awesome_tests.sh`
 Right now, when you run the script it will say something like:
 
     [<timestamp>] Super Awesome Tests not run.  Software not installed.
