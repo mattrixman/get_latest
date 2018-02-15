@@ -17,7 +17,7 @@ Your co-worker Eric has provided a script that installs web-react. He says:
 
 ## Goal
 
-Your goal is to configure this machine so your tests run against the *latest version* every night at midnight.  After a week, the output of `./view_nightly_test_runs.sh` should resemble this:
+Configure your machine so that the super awesome tests run against the *latest version* of web-react every night at midnight.  After a week, the output of `./view_nightly_test_runs.sh` should resemble this:
 
     [2018-02-17] Super Awesome Tests run against version: facd0bc
     [2018-02-18] Super Awesome Tests run against version: f3668b9
