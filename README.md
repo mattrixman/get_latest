@@ -27,6 +27,14 @@ Configure your machine so that the super awesome tests run against the *latest v
     [2018-02-22] Super Awesome Tests run against version: d122764
     [2018-02-23] Super Awesome Tests run against version: d122764
 
+## Setup
+
+To set up the challenge, do this:
+
+    sudo ./challenge_setup.sh
+    
+This will create `/opt/clover` and set up its contents for the challenge.
+
 ## Guidelines
 
  - Feel free to use a browser to search for help--this is not a test of what you can remember, it is a test of what you can do
