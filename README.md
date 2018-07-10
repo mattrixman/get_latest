@@ -33,7 +33,7 @@ To set up the challenge, do this:
 
     sudo ./challenge_setup.sh
     
-This will create `/opt/clover` and set up its contents for the challenge.
+This will create `/opt/clover` and set up its contents for the challenge.  It will also place the `install_web-react` script in `/usr/local/bin/`.
 
 ## Guidelines
 
