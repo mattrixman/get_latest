@@ -9,9 +9,9 @@ Right now, when you run the script it will say something like:
 
 But if web-react is installed it will say something like:
 
-    [<timestamp>] Super Awesome Tests run against version: <version> 
+    [<timestamp>] Super Awesome Tests run against version: <version>
 
-Your co-worker Eric has provided a script that installs web-react. He says: 
+Your co-worker Eric has provided a script that installs web-react. He says:
 
 > I put the script in /usr/local/bin.  If you call it each night with the version you want, install_web-react should handle all of the set-up so that all you need to do then is run your tests.
 
@@ -32,8 +32,13 @@ Configure your machine so that the super awesome tests run against the *latest v
 To set up the challenge, do this:
 
     sudo ./challenge_setup.sh
-    
+
 This will create `/opt/clover` and set up its contents for the challenge.  It will also place the `install_web-react` script in `/usr/local/bin/`.
+
+Then, in a separate shell, start the web server that `install_web-react` grabs artifacts from:
+
+    cd super_awesome/site
+    python -m SimpleHTTPServer 8080
 
 ## Guidelines
 

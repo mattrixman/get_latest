@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 # Quick script to deploy web-react artifact locally.
-# Grabs artifact from artifactory.dev.clover.com
+# Grabs artifact from localhost:8080
 # Expects artifact name , handles service stop/start
 
 import requests
@@ -13,9 +13,9 @@ import tarfile
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("artifact", type=str, help="The artifact name to deploy (display name in artifactory)")
-    parser.add_argument("--url", type=str, default='http://artifactory.corp.clover.com:8081/artifactory/' +
+    parser.add_argument("--url", type=str, default='http://localhost:8080/artifactory/' +
                                                    'ext-release-local/com/clover/web-react/dev/web-react/',
-                        help='The report file to create, defaults to http://artifactory.corp.clover.com:8081/' +
+                        help='The report file to create, defaults to http://localhost:8080/' +
                              'artifactory/ext-release-local/com/clover/web-react/dev/web-react/')
     parser.add_argument("--dest", type=str, default='/opt/clover/archive/',
                         help="Destination directory, defaults to /opt/clover/archive/")
