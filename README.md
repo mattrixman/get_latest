@@ -44,7 +44,7 @@ Then, in a separate shell, start the web server that `install_web-react` grabs a
 
  - Feel free to use a browser to search for help--this is not a test of what you can remember, it is a test of what you can do
 
- - Feel free to use whatever technologies you are comfortable with
+ - Feel free to use whatever technologies you are comfortable with (open source libraries, installed utilities, and copy-pasted code is all OK--please use comments to indicate which code is yours and which is pasted)
 
  - If you feel like you are stuck, it is OK to ask questions
 
@@ -56,3 +56,4 @@ Then, in a separate shell, start the web server that `install_web-react` grabs a
 
  - `view_nightly_test_runs.sh` was only provided to to give you an idea of how your solution will be evaluated for correctness.  It should not be necessary to modify it.
 
+ - If you see an ugly way to get the job done, go with it--ellegance is great when it comes, but sometimes an ugly hack is all you need.
